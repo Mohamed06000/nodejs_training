@@ -1,15 +1,23 @@
 let http = require('http')
 let fs = require('fs')
+let url = require('url')
 
 let server = http.createServer()
 server.on('request', (request, response) => {
-    fs.readFile('indeex.html', (err, data) => {
+    response.writeHead(200)
+    let query = url.parse(request.url, true).query
+
+    let name = query.name === undefined ? 'anonyme' : query.name
+
+    fs.readFile('index.html', 'utf-8', (err, data) => {
         if (err) {
             response.writeHead(404)
             response.end('Fichier n\'existe pas !')
+        } else {
+            response.writeHead(200)
+            data = data.replace('{{ name }}', name)
+            response.end(data)
         }
-        response.writeHead(200)
-        response.end(data)
 
     })
 
