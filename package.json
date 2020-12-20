@@ -1,12 +1,21 @@
 {
-  "name": "nodejs_training",
+  "name": "traiing",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "mohamed",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohamed06000/nodejs_training.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mohamed06000/nodejs_training/issues"
+  },
+  "homepage": "https://github.com/Mohamed06000/nodejs_training#readme",
+  "description": ""
 }
