@@ -17,5 +17,8 @@
     "url": "https://github.com/Mohamed06000/nodejs_training/issues"
   },
   "homepage": "https://github.com/Mohamed06000/nodejs_training#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
 }
