@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Mohamed06000/nodejs_training#readme",
   "description": "",
   "dependencies": {
+    "express": "^4.17.1",
     "lodash": "^4.17.20"
   }
 }

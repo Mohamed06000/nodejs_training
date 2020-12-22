@@ -1,12 +1,25 @@
-let http = require('http')
+const express = require('express')
+const app = express()
+
+app.get('/', (request, response) => {
+    response.send('Salut tu es à la racine')
+})
+
+app.get('/demo', (request, response) => {
+    response.send('Salut tu es à la demo')
+})
+
+app.listen(3000)
+
+/*let http = require('http')
 const EventEmitter = require('events')
 
-
+let _ = require('lodash')
 
 let app = require('./App').start(3001)
 app.on('root', (response) => {
     response.write('Je suis à laa racine')
-})
+})*/
 
 /*
 
